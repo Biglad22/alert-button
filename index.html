@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        HTML{
+            font-size:62.5%;
+        }
+        body{
+            font-size:1rem;
+            background-color:black;
+        }
+
+        button{
+            position:absolute;
+            bottom: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            padding:1.6em 2.4em;
+            font-size:2.4em;
+            font-weight:500;
+            cursor:pointer;
+            border-radius:6px;
+            background-color:blue;
+            color:antiquewhite;
+            border:none;
+            box-shadow:0 0 10px rgba(6, 6, 133, 0.689), 0 0 8px rgb(0, 0, 63) inset;
+
+        }
+
+        button:active{
+            box-shadow:0 0 24px rgba(6, 6, 133, 0.889), 0 0 8px rgb(0, 0, 119) inset;  
+        }
+        @media(max-width:550px){
+            body{
+            font-size:0.75rem;
+        }   
+        }
+
+        @media(max-width:400px){
+            body{
+            font-size:0.58rem;
+        }   
+        }
+
+    </style>
+</head>
+<body>
+    <button type="button" onclick='doSomething()'>send me alert</button>
+    <script>
+        const doSomething =(e)=>{
+            alert('this page is restricted');
+        }
+    </script>
+</body>
+</html>
